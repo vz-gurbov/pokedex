@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap");
+body {
+  background-color: teal;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Zetta', sans-serif;
+  color: white;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card__subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card__image {
+  height: 180px;
+}
+
+.card__container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  -webkit-animation: bounce 0.5s linear;
+          animation: bounce 0.5s linear;
+  cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+  20% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  60% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  80% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+}
+
+@keyframes bounce {
+  20% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  60% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  80% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+}
+
+#heroes {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #f4f4f4;
+  opacity: 0.95;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  background-color: yellowgreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0px 1px 2px #2b3a0d;
+          box-shadow: 0px 1px 2px #2b3a0d;
+}
+/*# sourceMappingURL=style.css.map */
